@@ -1,0 +1,29 @@
+﻿{
+    "Name":  "Virtual Machine Power",
+    "Id":  null,
+    "IsCustom":  true,
+    "Description":  "Lets you start and restart virtual machines, but not access to them, and not the virtual network or storage account they\u0027re connected to.",
+    "Actions":  [
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Compute/*/read",
+                    "Microsoft.Insights/alertRules/*",
+                    "Microsoft.Network/*/read",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Storage/*/read",
+                    "Microsoft.Support/*",
+                    "Microsoft.Compute/virtualMachines/start/action",
+                    "Microsoft.Compute/virtualMachines/restart/action"
+                ],
+    "NotActions":  [
+
+                   ],
+    "DataActions":  [
+
+                    ],
+    "NotDataActions":  [
+
+                       ],
+    "AssignableScopes":  [
+                             "/subscriptions/"
+                         ]
+}
